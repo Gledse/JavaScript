@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Armazenamento</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            background-color: rgb(89, 89, 207);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Espaço de Armazenamento</h1>
+    <script>
+        /* 
+        Existe três formas de usar uma String no javaScript: "Aspas duplas"
+        'Aspas simples'
+        `Acrases`
+
+        Para o javaScript os números inteiros e decimas, usamos o tipo number
+
+        true false, usamos o tipo boolean
+
+        usamos o taypeof para saber o tipo primitivo exemplo:
+        var n = 67
+        taypeof n 
+        'number'
+        */
+
+       
+        var n1 = Number.parseInt(window.prompt('Digite um número inteiro'))
+        // Somente números inteiros
+
+        var n2 = Number.parseFloat(window.prompt('Digite um número decimal ou inteiro')) 
+        // Números decimais
+
+        var s = n1 + n2
+
+        window.alert('A soma dos valores é: '+ s)
+    </script>
+</body>
+</html>

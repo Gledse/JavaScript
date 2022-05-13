@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+</head>
+<style>
+    body {
+        background-color: rgba(0, 132, 255, 0.89);
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1em;
+    }
+    </style>
+<body> <!-- Para fazer alterações em tempo real, apenas abrir no VScode a opção >>> Extensions(Ctrl + Shift + X) e pesquisar por Live Server, dps (Ctrl + Shift + p) >>> Open with Live Server 
+    
+    Além disso baixo a instensão Node.js Exec-->
+    
+    <h1>Iniciando os estudos com DOM</h1> 
+    
+    <h3>Selecionando por Marca</h3>
+    <p>Exemplos</p>
+    <p>Aprendendo a usar o <strong>DOM (Document Object Model)</strong> em JavaScript.</p> <!-- O DOM está presente quando estou rodando o javaScript dentro do meu navegador exemplo (window(location, document(html(head, body)), history, etc))-->
+
+    <h3>Selecionando por ID</h3>
+    <div id= 'msg'>Clicque em mim</div>
+
+    <h3>Selecionando por Nome</h3>
+    <div name = 'linha'> Programando em JavaScript </div>
+
+    <h3>Selecionando por Classe</h3>
+    <p class= 'teste'> Aqui vai o resultado</p>
+
+    <h3>Selecionando por Selector</h3>
+    <hr> <br>
+    <!-- 
+        var f = window.document.querySelector('p.teste')
+        f.style.background = 'green' 
+    -->
+    <script>
+
+        //Selecionando por Marca
+        var corpo = window.document.body // variavel para o corpo
+        corpo.style.background = 'grey' // vai mudar a cor do fundo de azul para sinza
+
+        var p1 = window.document.getElementsByTagName('p')[1] // [0] é o segundo parágrafo que aparecer
+        document.write('Esta escrito assim: '+ p1.innerText) // irá copiar o segundo parágrafo sem a formatação
+        document.write(p1.innerHTML) // irá copiar o segundo parágrafo com as mesmas configurações ou seja formatado
+
+        p1.style.color = 'black' // vai mudar o segundo parágrafo para preto
+
+        
+        //Selecionando por ID
+        var d = window.document.getElementById('msg')
+        d.style.background = 'green'
+        d.innerText = 'Estou aguardando...'
+
+
+        //Selecionando por Nome
+        var a = window.document.getElementsByName('linha')[0]
+        a.innerText = 'Olá!'
+        
+        //Selecionando por Classe
+        var e = window.document.getElementsByClassName('teste')[0]
+        e.innerText = 'A seguir'
+
+        //Selecionando por Selector
+        var f = window.document.querySelector('p.teste')
+        f.style.background = 'green'
+    </script>
+</body>
+</html>

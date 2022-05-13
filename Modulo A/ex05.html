@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var n1 = Number(window.prompt('Digite um número decimal'))
+        document.write(`Conversão de números: ${n1.toFixed(2)} <br>`) 
+        // conversão de números, irá acrescentar duas casas decimais
+
+        document.write(`Conversão de números: ${n1.toFixed(2).replace('.' , ',')} <br>`) 
+        // conversão de números e irá trocar o ponto pela vírgula
+
+        document.write(`Conversão de números para moedas: ${n1.toLocaleString('pt-br', {style: 'currency', currency: 'USD'})} <br>`)
+        // conversão de números para moedas, desde o momento que troque o mzn por outros codigos, exemplo USD, EUR, BRL
+    </script>
+</body>
+</html>

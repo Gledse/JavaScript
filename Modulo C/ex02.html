@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+        div#area {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgba(0, 128, 0, 0.753);
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+     <!--
+         Site para ver os eventos: JavaScript event list >>> Event reference - MDN web Docs
+         https://developer.mozilla.org/en-US/docs/Web/Events#event_listing
+     -->
+    <div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()"> <!-- Configurando eventos no HTML, evento >>> onclick, nome do evento >>> clicar() -->
+        Interaja...
+    </div>
+
+    <script>
+        var a = window.document.getElementById('area')
+
+        //eventos, Configurando eventos no javaScript, é opcional fazer no javaScript ou HTML
+        a.addEventListener('click', clicar)
+        a.addEventListener('mouseenter', entrar)
+        a.addEventListener('mouseout', sair)
+
+        //Funções
+        function clicar() {
+            a.innerText = 'Clicou!'
+            a.style.background = 'blue'
+        } // Metodo clicar
+        function entrar() {
+            a.innerText = 'Entrou!'
+            a.style.background = 'green'
+        } 
+        function sair() {
+            a.innerText = 'Saiu!'
+            a.style.background = 'red'
+        } 
+
+    </script>
+</body>
+</html>

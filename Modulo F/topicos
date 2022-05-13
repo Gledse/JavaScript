@@ -1,0 +1,19 @@
+functios
+
+objectos
+>>> fundamentos da linguagem
+
+modularização:
+>>> Deixar codigo separado em arquivos separados, reutilizar codigos usando javaScript
+
+RegEx
+>>> expressoes regulares, para validação de dados
+
+JSON
+>>> é meio que estrutura de objecto para gravar dados localmente, 
+
+AJAX
+>>> Quando vc ta avaçando apagina e chega no final e ele carrega mais conteudos ou mostra mais conteudo a baixo, ao inves de dizer clica para a proxima pagina
+
+NodeJS
+>>> para fazer o seu programa correr do lado do servidor

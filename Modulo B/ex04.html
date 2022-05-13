@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // podemos usar tags de HTML nos nossos scripts
+    
+        var nome = window.prompt('Qual é o seu nome?')
+        
+        document.write(`Olá, ${nome}! o seu nome tem <strong>${nome.length}</strong> letras <br>`) // document.write escreve na tela >>> .length quantos caracteres a String tem
+
+        document.write(`Olá, ${nome}! o seu nome em maiúsculas: <strong>${nome.toUpperCase()}</strong> <br>`) // Tudo para 'MAIÚCULAS' 
+
+        document.write(`Olá, ${nome}! o seu nome em minúscula: <strong>${nome.toLowerCase()}</strong> <br>`) // Tudo para 'minúsculas'
+    </script>
+</body>
+</html>
