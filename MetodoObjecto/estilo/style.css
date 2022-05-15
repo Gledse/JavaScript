@@ -1,0 +1,88 @@
+@charset "UTF-8";
+*{
+    margin: 0px;
+}
+@font-face {
+    font-family: 'fontEscrita01';
+    src: url('../Fontes/IndieFlower-Regular.ttf') format('opentype');
+    font-weight: normal;
+
+    font-family: 'fontEscrita02';
+    src: url('../Fontes/Tapestry-Regular.ttf') format('opentype');
+    font-weight: normal;
+}
+:root {
+    --fonte-padrão: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte-destaque01:'fontEscrita01', cursive;
+    --fonte-destaque02:'fontEscrita02', cursive;
+}
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #fafbfc;
+}
+header {
+    background-color: rebeccapurple;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-family: var(--fonte-destaque02);
+}
+main {
+    padding: 30px 50px;
+}
+.card {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+.lineInput {
+    display: table-caption; /* para fazer com que os nossos itens fiquem um abaixo do outro */
+    margin-bottom: 10px;
+}
+input {
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    outline: 0;
+    width: 360px;   
+}
+button {
+    width: 100px;
+    border: 0px;
+    padding: 5px;
+    outline: 0;
+    background-color: blueviolet;
+    color: #fff;
+    border-radius: 3px;
+    font-weight: bold;
+    transition: all ease 0.3s; /* efeito de lentidão */
+}
+button:hover {
+    background-color: darkslateblue;
+}
+.content {
+    margin-top: 15px;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+td, th {
+    border: 1px solid #ccc;
+}
+table  th {
+background-color: rgba(204, 204, 204, 0.705);
+}
+table  th, td {
+padding: 1px 5px;
+text-align: left;
+}
+/* https://www.flaticon.com/ >> site para baixar icones */
+table td img{
+    width: 22px;
+}
+.center {
+    text-align: center;
+}

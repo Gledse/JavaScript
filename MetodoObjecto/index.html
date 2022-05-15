@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metodo Objecto</title>
+    <link rel="stylesheet" href="estilo/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Minha Loja 1.0</h1>
+    </header>
+
+    <main>
+        <div class="title">
+            <h2>Produtos</h2>
+            <span>Lista de produtos da minha loja.</span>
+        </div>
+
+        <div class="card">
+            <div class="lineInput">
+                <label">Produto</label>
+                <input type="text" id="nomeProduto" placeholder="Nome do produto" class="tamanho1">
+            </div>
+
+            <div class="lineInput">
+                <label">Preço</label>
+                <input type="number" id="precoProduto" placeholder="Preço do produto">
+            </div>
+
+            <button onclick="produto.salvar()" id="btn1">Salvar</button>
+            <button onclick="produto.cancelar()">Cancelar</button>
+        </div>
+
+        <div class="content">
+            <table>
+                <thead>
+                    <th class="center">ID</th>
+                    <th>Produto</th>
+                    <th>Valor</th>
+                    <th class="center">Ações</th>
+                </thead>
+                <tbody id="tbody">
+                    
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <script src="JS/script.js"></script>
+</body>
+</html>

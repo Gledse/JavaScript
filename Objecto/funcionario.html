@@ -15,20 +15,22 @@
            <p>
                Código:
                <input type="number" name="txtCodigo" id="txtCodigo">
-               <input type="button" value="Adicionar" class="posição1" onclick="funcionario.adicionar()">
+               <input type="button" value="Adicionar" class="posição1" onclick="funcionario.adicionar()"> 
             </p>
            <p>
                Nome:
                <input type="text" name="txtNome" id="txtNome">
-               <input type="button" value="Visualizar" class="posição2" onclick="pesquisar()">
+               <input type="button" value="Visualizar" class="posição2" onclick="funcionario.visualizar()">
             </p>
            <p>
                Sexo:
-               <input type="radio" name="radSexo" id="masc" checked>
+               <input type="radio" name="radsex" id="masc" checked>
                <label for="masc">Masculino</label>
-               <input type="radio" name="radSexo" id="fem" checked>
+
+               <input type="radio" name="radsex" id="fem" checked>
                <label for="fem">Femenino</label>
-               <input type="button" value="Excluir" class="posição3">
+
+               <input type="button" value="Excluir" class="posição3" onclick="funcionario.excluir()">
             </p>
        </div>
        <div id="res">
@@ -38,6 +40,7 @@
    <footer>
        <p>&copy; Funcionário</p>
    </footer>
+
    <script src="funcionario.js"></script>
 </body>
 </html>
